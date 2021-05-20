@@ -13,18 +13,18 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
   run_exports:
     - {{ pin_compatible('sirius', max_pin='x') }}
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ compiler('fortran') }}
+    - {{ compiler('fortran') }}  # [osx or linux]
+    - {{ compiler('m2w64_fortran') }}  # [windows]
     - make
     - cmake >=3.14.0
     - libgomp      # [linux]
-    - llvm-openmp  # [osx]
+    - llvm-openmp  # [osx or windows]
   host:
     - {{ mpi }}
     - libblas
