@@ -61,6 +61,20 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sirius-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpi" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64_mpimpich</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12573&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sirius-feedstock?branchName=master&jobName=win&configuration=win_64_mpimpich" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_mpiopenmpi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12573&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sirius-feedstock?branchName=master&jobName=win&configuration=win_64_mpiopenmpi" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
