@@ -15,7 +15,7 @@ build:
   number: 1
   skip: true  # [win]
   run_exports:
-    - {{ pin_compatible('sirius', max_pin='x') }}
+    - {{ pin_subpackage('sirius', max_pin='x') }}
 
 requirements:
   build:
