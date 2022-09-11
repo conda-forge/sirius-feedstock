@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 boost_cpp:
-- 1.74.0
+- 1.78.0
 channel_sources:
 - conda-forge
 channel_targets:
@@ -9,25 +9,29 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '14'
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '9'
+- '11'
 gsl:
 - '2.7'
 hdf5:
 - 1.12.1
 libblas:
-- 3.8 *netlib
+- 3.9 *netlib
 liblapack:
-- 3.8 *netlib
+- 3.9 *netlib
 llvm_openmp:
-- '11'
+- '14'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
 - mpich
+mpich:
+- '4'
+openmpi:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
