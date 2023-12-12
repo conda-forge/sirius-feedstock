@@ -1,3 +1,6 @@
 mpi:
   - openmpi
-  - mpich
+c_compiler:
+  - gcc  # For C code on macOS
+cxx_compiler:
+  - gxx  # For C++ code on macOS
