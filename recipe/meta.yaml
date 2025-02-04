@@ -1,5 +1,5 @@
 {% set name = "sirius" %}
-{% set version = "7.5.0" %}
+{% set version = "7.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,12 @@ package:
 
 source:
   url: https://github.com/electronic-structure/SIRIUS/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c583f88ffc02e9acac24e786bc35c7c32066882d2f70a1e0c14b5780b510365d
+  sha256: 1ba92942aa39b49771677cc8bf1c94a0b4350eb45bf3009318a6c2350b46a276
   patches:
     - fix_osx_compilation.patch  # [osx]
-    - fix_osx_cmake.patch  # [osx]
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x') }}
