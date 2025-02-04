@@ -13,13 +13,14 @@ source:
     - fix_osx_cmake.patch  # [osx]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('sirius', max_pin='x') }}
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
     - make
