@@ -16,7 +16,7 @@ build:
   number: 1
   skip: true  # [win]
   run_exports:
-    - {{ pin_subpackage('sirius', max_pin='x') }}
+    - {{ pin_subpackage(name, max_pin='x') }}
 
 requirements:
   build:
@@ -38,7 +38,7 @@ requirements:
     - spfft
     - costa
     - spla
-    - boost-cpp    # [osx]
+    - libboost-devel  # [osx]
     - pkg-config
     - scalapack
   run:
@@ -47,7 +47,7 @@ requirements:
     - spfft
     - spla
     - costa
-    - boost-cpp    # [osx]
+    - libboost-devel  # [osx]
 
 test:
   commands:
