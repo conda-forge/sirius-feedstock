@@ -1,36 +1,33 @@
-From 90a88b2859dbe942081d6a713e3addcc6e974cce Mon Sep 17 00:00:00 2001
-From: Simon Pintarelli <simon.pintarelli@cscs.ch>
-Date: Sat, 9 Dec 2023 11:45:42 +0100
-Subject: [PATCH] osx compilation
-
----
- src/context/simulation_context.cpp |  4 +---
- src/core/system_tools.hpp          | 12 ------------
- 2 files changed, 1 insertion(+), 15 deletions(-)
-
 diff --git a/src/context/simulation_context.cpp b/src/context/simulation_context.cpp
-index 1b23cf6ad..bc41361ff 100644
+index 69ec028..7e78af2 100644
 --- a/src/context/simulation_context.cpp
 +++ b/src/context/simulation_context.cpp
-@@ -547,9 +547,7 @@ Simulation_context::print_info(std::ostream& out__) const
+@@ -542,10 +542,7 @@ Simulation_context::print_info(std::ostream& out__) const
          }
          os << "maximum number of OMP threads : " << omp_get_max_threads() << std::endl
             << "number of MPI ranks per node  : " << mpi::num_ranks_per_node() << std::endl
 -           << "page size (Kb)                : " << (get_page_size() >> 10) << std::endl
 -           << "number of pages               : " << get_num_pages() << std::endl
--           << "available memory (GB)         : " << (get_total_memory() >> 30) << std::endl;
+-           << "total system memory (GB)      : " << (get_total_memory() >> 30) << std::endl
+-           << "available memory (GB)         : " << (get_available_memory() >> 30);
 +           << "page size (Kb)                : " << (get_page_size() >> 10) << std::endl;
          os << std::endl;
      }
      {
 diff --git a/src/core/system_tools.hpp b/src/core/system_tools.hpp
-index 35aeddf48..96368ff6c 100644
+index 4d8d46d..34a4411 100644
 --- a/src/core/system_tools.hpp
 +++ b/src/core/system_tools.hpp
-@@ -55,18 +55,6 @@ get_page_size()
-     return sysconf(_SC_PAGESIZE);
+@@ -40,24 +40,6 @@ hostname()
+     return std::string(nm);
  }
  
+-inline long
+-get_page_size()
+-{
+-    return sysconf(_SC_PAGESIZE);
+-}
+-
 -inline long
 -get_num_pages()
 -{
@@ -46,6 +43,3 @@ index 35aeddf48..96368ff6c 100644
  inline auto
  get_proc_status()
  {
--- 
-2.43.0
-
