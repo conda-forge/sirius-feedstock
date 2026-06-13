@@ -1,7 +1,7 @@
 {% set name = "sirius" %}
 {% set version = "7.11.1" %}
 
-{% set build = 4 %}
+{% set build = 5 %}
 
 {% set mpi_prefix = "mpi_" + mpi %}
 
@@ -46,6 +46,7 @@ requirements:
     - "spfft * {{ mpi_prefix }}_*" 
     - "spla * {{ mpi_prefix }}_*" 
     - spglib
+    - zlib
   run:
     - {{ mpi }}
     - _openmp_mutex
@@ -60,8 +61,8 @@ requirements:
 test:
   commands:
     - test -f "${PREFIX}/lib/libsirius${SHLIB_EXT}"
-    - atom --help
-    - hydrogen --help
+    - atom --help  # [target_platform == build_platform]
+    - hydrogen --help  # [target_platform == build_platform]
 
 about:
   home: https://github.com/electronic-structure/SIRIUS
