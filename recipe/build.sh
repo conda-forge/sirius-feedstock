@@ -7,8 +7,11 @@ declare -a EXTRA_CMAKE_ARGS
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" == "1" ]]; then
   EXTRA_CMAKE_ARGS+=(
     -DMPI_RUN_RESULT_C_libver_mpi_normal=0
+    -DMPI_RUN_RESULT_C_libver_mpi_normal__TRYRUN_OUTPUT=""
     -DMPI_RUN_RESULT_CXX_libver_mpi_normal=0
+    -DMPI_RUN_RESULT_CXX_libver_mpi_normal__TRYRUN_OUTPUT=""
     -DMPI_RUN_RESULT_Fortran_libver_mpi_F08_MODULE=0
+    -DMPI_RUN_RESULT_Fortran_libver_mpi_F08_MODULE__TRYRUN_OUTPUT=""
   )
 fi
 
