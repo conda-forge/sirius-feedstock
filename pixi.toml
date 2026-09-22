@@ -5,7 +5,7 @@
 
 [workspace]
 name = "sirius-feedstock"
-version = "2026.8.5"  # conda-smithy version used to generate this file
+version = "2026.9.22"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/sirius-feedstock"
 authors = ["@conda-forge/sirius"]
 channels = ["conda-forge"]
@@ -38,182 +38,182 @@ description = "List contents of all packages found in rattler-build build direct
 cmd = "rattler-build build --recipe recipe"
 description = "Build sirius-feedstock directly (without setup scripts), no particular variant specified"
 [feature.build.tasks."build-linux_64_hdf51.14.6mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpimpich.yaml --target-platform linux-64"
 description = "Build sirius-feedstock with variant linux_64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_64_hdf51.14.6mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_64_hdf51.14.6mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpimpich.yaml --target-platform linux-64"
+description = "Debug sirius-feedstock with variant linux_64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_64_hdf51.14.6mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_hdf51.14.6mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_64_hdf51.14.6mpimpich"
 [feature.build.tasks."build-linux_64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpiopenmpi.yaml --target-platform linux-64"
 description = "Build sirius-feedstock with variant linux_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf51.14.6mpiopenmpi.yaml --target-platform linux-64"
+description = "Debug sirius-feedstock with variant linux_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_64_hdf51.14.6mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_hdf51.14.6mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_64_hdf51.14.6mpiopenmpi"
 [feature.build.tasks."build-linux_64_hdf52mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf52mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf52mpimpich.yaml --target-platform linux-64"
 description = "Build sirius-feedstock with variant linux_64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_64_hdf52mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf52mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_64_hdf52mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf52mpimpich.yaml --target-platform linux-64"
+description = "Debug sirius-feedstock with variant linux_64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_64_hdf52mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_hdf52mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_64_hdf52mpimpich"
 [feature.build.tasks."build-linux_64_hdf52mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf52mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_hdf52mpiopenmpi.yaml --target-platform linux-64"
 description = "Build sirius-feedstock with variant linux_64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_64_hdf52mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf52mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_64_hdf52mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_hdf52mpiopenmpi.yaml --target-platform linux-64"
+description = "Debug sirius-feedstock with variant linux_64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_64_hdf52mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_hdf52mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_64_hdf52mpiopenmpi"
 [feature.build.tasks."build-linux_aarch64_hdf51.14.6mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpimpich.yaml --target-platform linux-aarch64"
 description = "Build sirius-feedstock with variant linux_aarch64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_aarch64_hdf51.14.6mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_aarch64_hdf51.14.6mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpimpich.yaml --target-platform linux-aarch64"
+description = "Debug sirius-feedstock with variant linux_aarch64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_aarch64_hdf51.14.6mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_hdf51.14.6mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_aarch64_hdf51.14.6mpimpich"
 [feature.build.tasks."build-linux_aarch64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpiopenmpi.yaml --target-platform linux-aarch64"
 description = "Build sirius-feedstock with variant linux_aarch64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_aarch64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_aarch64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf51.14.6mpiopenmpi.yaml --target-platform linux-aarch64"
+description = "Debug sirius-feedstock with variant linux_aarch64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_aarch64_hdf51.14.6mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_hdf51.14.6mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_aarch64_hdf51.14.6mpiopenmpi"
 [feature.build.tasks."build-linux_aarch64_hdf52mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf52mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf52mpimpich.yaml --target-platform linux-aarch64"
 description = "Build sirius-feedstock with variant linux_aarch64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_aarch64_hdf52mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf52mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_aarch64_hdf52mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf52mpimpich.yaml --target-platform linux-aarch64"
+description = "Debug sirius-feedstock with variant linux_aarch64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_aarch64_hdf52mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_hdf52mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_aarch64_hdf52mpimpich"
 [feature.build.tasks."build-linux_aarch64_hdf52mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf52mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_hdf52mpiopenmpi.yaml --target-platform linux-aarch64"
 description = "Build sirius-feedstock with variant linux_aarch64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_aarch64_hdf52mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf52mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_aarch64_hdf52mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_hdf52mpiopenmpi.yaml --target-platform linux-aarch64"
+description = "Debug sirius-feedstock with variant linux_aarch64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_aarch64_hdf52mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_hdf52mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_aarch64_hdf52mpiopenmpi"
 [feature.build.tasks."build-linux_ppc64le_hdf51.14.6mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpimpich.yaml --target-platform linux-ppc64le"
 description = "Build sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_ppc64le_hdf51.14.6mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpimpich.yaml --target-platform linux-ppc64le"
+description = "Debug sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_ppc64le_hdf51.14.6mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_ppc64le_hdf51.14.6mpimpich"
 [feature.build.tasks."build-linux_ppc64le_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpiopenmpi.yaml --target-platform linux-ppc64le"
 description = "Build sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_ppc64le_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpiopenmpi.yaml --target-platform linux-ppc64le"
+description = "Debug sirius-feedstock with variant linux_ppc64le_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_ppc64le_hdf51.14.6mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_hdf51.14.6mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_ppc64le_hdf51.14.6mpiopenmpi"
 [feature.build.tasks."build-linux_ppc64le_hdf52mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpimpich.yaml --target-platform linux-ppc64le"
 description = "Build sirius-feedstock with variant linux_ppc64le_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-linux_ppc64le_hdf52mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpimpich.yaml"
-description = "Build sirius-feedstock with variant linux_ppc64le_hdf52mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpimpich.yaml --target-platform linux-ppc64le"
+description = "Debug sirius-feedstock with variant linux_ppc64le_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_ppc64le_hdf52mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_hdf52mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_ppc64le_hdf52mpimpich"
 [feature.build.tasks."build-linux_ppc64le_hdf52mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpiopenmpi.yaml --target-platform linux-ppc64le"
 description = "Build sirius-feedstock with variant linux_ppc64le_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-linux_ppc64le_hdf52mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant linux_ppc64le_hdf52mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_hdf52mpiopenmpi.yaml --target-platform linux-ppc64le"
+description = "Debug sirius-feedstock with variant linux_ppc64le_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-linux_ppc64le_hdf52mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_hdf52mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant linux_ppc64le_hdf52mpiopenmpi"
 [feature.build.tasks."build-osx_64_hdf51.14.6mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpimpich.yaml --target-platform osx-64"
 description = "Build sirius-feedstock with variant osx_64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-osx_64_hdf51.14.6mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpimpich.yaml"
-description = "Build sirius-feedstock with variant osx_64_hdf51.14.6mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpimpich.yaml --target-platform osx-64"
+description = "Debug sirius-feedstock with variant osx_64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_64_hdf51.14.6mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_64_hdf51.14.6mpimpich"
 [feature.build.tasks."build-osx_64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpiopenmpi.yaml --target-platform osx-64"
 description = "Build sirius-feedstock with variant osx_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-osx_64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant osx_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf51.14.6mpiopenmpi.yaml --target-platform osx-64"
+description = "Debug sirius-feedstock with variant osx_64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_64_hdf51.14.6mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_64_hdf51.14.6mpiopenmpi"
 [feature.build.tasks."build-osx_64_hdf52mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52mpimpich.yaml --target-platform osx-64"
 description = "Build sirius-feedstock with variant osx_64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-osx_64_hdf52mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf52mpimpich.yaml"
-description = "Build sirius-feedstock with variant osx_64_hdf52mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf52mpimpich.yaml --target-platform osx-64"
+description = "Debug sirius-feedstock with variant osx_64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_64_hdf52mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_64_hdf52mpimpich"
 [feature.build.tasks."build-osx_64_hdf52mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52mpiopenmpi.yaml --target-platform osx-64"
 description = "Build sirius-feedstock with variant osx_64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-osx_64_hdf52mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf52mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant osx_64_hdf52mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_hdf52mpiopenmpi.yaml --target-platform osx-64"
+description = "Debug sirius-feedstock with variant osx_64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_64_hdf52mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_64_hdf52mpiopenmpi"
 [feature.build.tasks."build-osx_arm64_hdf51.14.6mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpimpich.yaml --target-platform osx-arm64"
 description = "Build sirius-feedstock with variant osx_arm64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-osx_arm64_hdf51.14.6mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpimpich.yaml"
-description = "Build sirius-feedstock with variant osx_arm64_hdf51.14.6mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpimpich.yaml --target-platform osx-arm64"
+description = "Debug sirius-feedstock with variant osx_arm64_hdf51.14.6mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_arm64_hdf51.14.6mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_hdf51.14.6mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_arm64_hdf51.14.6mpimpich"
 [feature.build.tasks."build-osx_arm64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpiopenmpi.yaml --target-platform osx-arm64"
 description = "Build sirius-feedstock with variant osx_arm64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-osx_arm64_hdf51.14.6mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant osx_arm64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf51.14.6mpiopenmpi.yaml --target-platform osx-arm64"
+description = "Debug sirius-feedstock with variant osx_arm64_hdf51.14.6mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_arm64_hdf51.14.6mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_hdf51.14.6mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_arm64_hdf51.14.6mpiopenmpi"
 [feature.build.tasks."build-osx_arm64_hdf52mpimpich"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf52mpimpich.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf52mpimpich.yaml --target-platform osx-arm64"
 description = "Build sirius-feedstock with variant osx_arm64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."debug-osx_arm64_hdf52mpimpich"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf52mpimpich.yaml"
-description = "Build sirius-feedstock with variant osx_arm64_hdf52mpimpich directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf52mpimpich.yaml --target-platform osx-arm64"
+description = "Debug sirius-feedstock with variant osx_arm64_hdf52mpimpich directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_arm64_hdf52mpimpich"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_hdf52mpimpich.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_arm64_hdf52mpimpich"
 [feature.build.tasks."build-osx_arm64_hdf52mpiopenmpi"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf52mpiopenmpi.yaml"
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_hdf52mpiopenmpi.yaml --target-platform osx-arm64"
 description = "Build sirius-feedstock with variant osx_arm64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."debug-osx_arm64_hdf52mpiopenmpi"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf52mpiopenmpi.yaml"
-description = "Build sirius-feedstock with variant osx_arm64_hdf52mpiopenmpi directly (without setup scripts)"
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_hdf52mpiopenmpi.yaml --target-platform osx-arm64"
+description = "Debug sirius-feedstock with variant osx_arm64_hdf52mpiopenmpi directly (without setup scripts)"
 [feature.build.tasks."inspect-osx_arm64_hdf52mpiopenmpi"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_hdf52mpiopenmpi.yaml"
 description = "List contents of sirius-feedstock packages built for variant osx_arm64_hdf52mpiopenmpi"

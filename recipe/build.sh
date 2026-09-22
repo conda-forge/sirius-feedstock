@@ -3,6 +3,15 @@ set -ex
 
 declare -a EXTRA_CMAKE_ARGS
 
+# On macOS the GNU Fortran runtime (libgfortran, libemutls_w, libheapt_w, ...)
+# lives under a gcc-version-specific subdirectory that is not on the default
+# linker search path, causing linking of libsirius_cxx against libmpifort to
+# fail with "library not found for -lemutls_w". Add that directory explicitly.
+if [[ "$(uname)" == "Darwin" ]]; then
+  GFORTRAN_LIBDIR="$(dirname "$("${FC}" -print-file-name=libgfortran.dylib)")"
+  export LDFLAGS="${LDFLAGS} -L${GFORTRAN_LIBDIR}"
+fi
+
 # Conditionally append try_run results if cross-compiling
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" == "1" ]]; then
   EXTRA_CMAKE_ARGS+=(
